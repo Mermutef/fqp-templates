@@ -54,7 +54,7 @@
 \geometry{
   a4paper,
   left=3cm,
-  right=2cm,
+  right=1.5cm,
   top=2cm,
   bottom=2cm,
   bindingoffset=0cm
