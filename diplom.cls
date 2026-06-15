@@ -40,12 +40,15 @@
 
 \RequirePackage{fontspec}
 \setmainfont{Times New Roman}[Script=Cyrillic]
-\setmonofont{DejaVu Sans Mono}[Scale=0.85]
+
+\newcommand{\monoscale}{1.1}
+
+\setmonofont{CMU Typewriter Text}[Scale=\monoscale]
 
 \RequirePackage[english,russian]{babel}
 \babelprovide[import, onchar=fonts ids]{russian}
 \babelfont{rm}{Times New Roman}
-\babelfont{tt}{DejaVu Sans Mono}
+\babelfont{tt}[Scale=\monoscale]{CMU Typewriter Text}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Геометрия страницы и интервалы
