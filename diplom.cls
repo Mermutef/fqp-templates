@@ -75,28 +75,28 @@
   {\thechapter.\ }
   {0pt}
   {\normalfont\Large\bfseries}
-\titlespacing{\chapter}{0pt}{1em}{1em}
+\titlespacing{\chapter}{\parindent}{\baselineskip}{\baselineskip}
 
 \titleformat{\section}[hang]
   {\normalfont\large\bfseries}
   {\thesection.\ }
   {0pt}
   {\normalfont\large\bfseries}
-\titlespacing{\section}{0pt}{0.5em}{1em}
+\titlespacing{\section}{\parindent}{\baselineskip}{\baselineskip}
 
 \titleformat{\subsection}[hang]
   {\normalfont\normalsize\bfseries}
   {\thesubsection.\ }
   {0pt}
   {\normalfont\normalsize\bfseries}
-\titlespacing{\subsection}{0pt}{0.5em}{0.5em}
+\titlespacing{\subsection}{\parindent}{\baselineskip}{\baselineskip}
 
 \titleformat{\subsubsection}[hang]
   {\normalfont\normalsize\bfseries}
   {\thesubsubsection.\ }
   {0pt}
   {\normalfont\normalsize\bfseries}
-\titlespacing{\subsubsection}{0pt}{1em}{1em}
+\titlespacing{\subsubsection}{\parindent}{\baselineskip}{\baselineskip}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Оформление содержания
@@ -121,6 +121,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Подписи к рисункам и таблицам
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Отступы для float-объектов по ГОСТ — одна пустая строка
+\setlength{\intextsep}{\baselineskip}
+\setlength{\textfloatsep}{\baselineskip}
+\setlength{\abovecaptionskip}{0pt}
+\setlength{\belowcaptionskip}{0pt}
 
 \DeclareCaptionLabelSeparator{emdash}{~---~}
 \captionsetup{
