@@ -224,7 +224,7 @@
     {\hfill\appendixname\ \thechapter}
     {0pt}
     {\normalfont\Large\bfseries\centering}
-  \titlespacing{\chapter}{0pt}{0pt}{3.5em}
+  \titlespacing{\chapter}{0pt}{0pt}{\baselineskip}
   \let\addcontentslineold=\addcontentsline
   \renewcommand{\addcontentsline}[3]{%
     \addcontentslineold{##1}{##2}{\appendixname~##3}%
