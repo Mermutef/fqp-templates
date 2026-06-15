@@ -72,21 +72,21 @@
   {\thechapter.\ }
   {0pt}
   {\normalfont\Large\bfseries}
-\titlespacing{\chapter}{0pt}{1em}{3.5em}
+\titlespacing{\chapter}{0pt}{1em}{1em}
 
 \titleformat{\section}[hang]
   {\normalfont\large\bfseries}
   {\thesection.\ }
   {0pt}
   {\normalfont\large\bfseries}
-\titlespacing{\section}{0pt}{1em}{1em}
+\titlespacing{\section}{0pt}{0.5em}{1em}
 
 \titleformat{\subsection}[hang]
   {\normalfont\normalsize\bfseries}
   {\thesubsection.\ }
   {0pt}
   {\normalfont\normalsize\bfseries}
-\titlespacing{\subsection}{0pt}{1em}{1em}
+\titlespacing{\subsection}{0pt}{0.5em}{0.5em}
 
 \titleformat{\subsubsection}[hang]
   {\normalfont\normalsize\bfseries}
