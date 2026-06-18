@@ -229,6 +229,13 @@
   \renewcommand{\addcontentsline}[3]{%
     \addcontentslineold{##1}{##2}{\appendixname~##3}%
   }
+  % Нумерация таблиц и рисунков с буквой приложения
+  \counterwithin{figure}{chapter}
+  \counterwithin{table}{chapter}
+  \renewcommand{\thefigure}{\Asbuk{chapter}.\arabic{figure}}
+  \renewcommand{\thetable}{\Asbuk{chapter}.\arabic{table}}
+  \setcounter{figure}{0}
+  \setcounter{table}{0}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -393,6 +400,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \counterwithout{equation}{chapter}
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
 \providecommand\given{}
 \newcommand\SetSymbol[1][]{%
   \nonscript\:#1\vert
